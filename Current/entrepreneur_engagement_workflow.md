@@ -11,6 +11,7 @@ graph TD
 
     subgraph Agency_Workflow [Agency Process]
         Start --> StaffLog[1. Staff logs in Agency CRM]
+        StaffLog --> AgencyDB[(Agency Database)]
         
         subgraph Pain_Point [PAIN POINT: Double Data Entry]
             direction TB
